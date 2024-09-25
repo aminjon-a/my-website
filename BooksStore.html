@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Редактор</title>
+    <style>
+        /* Основные стили страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1600px; /* Увеличим ширину */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Сделаем больше отступ */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px; /* Увеличим размер заголовка */
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px; /* Увеличим высоту iframe */
+            border: none;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px; /* Увеличим кнопку */
+            font-size: 18px; /* Увеличим текст */
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 30px 0; /* Добавим отступов */
+        }
+
+        .button:hover {
+            background-color: #3700b3;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #6200ea;
+            color: white;
+            position: relative; /* Уберем фиксированное положение */
+            margin-top: 40px; /* Добавим отступ сверху */
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container, iframe {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Встроенный Редактор</h1>
+</header>
+
+<div class="container">
+    <p>Этот редактор встроен с помощью <strong>iframe</strong>. Ниже представлено поле редактора.</p>
+
+    <!-- Вставляем редактор с вашего сайта -->
+    <iframe src="https://xn--e1aqedp.xn--p1ai/editor"></iframe>
+
+    <a class="button" href="#new-functionality">Добавить функционал</a>
+</div>
+
+<footer>
+    <p>Сайт с редактором © 2024</p>
+</footer>
+
+</body>
+</html>
