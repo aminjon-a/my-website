@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
     <meta name="description" content="Ресурсы и инструменты для фронтенд разработчиков. Узнайте о лучших практиках, фреймворках и современных технологиях.">
     <meta name="keywords" content="фронтенд, разработка, HTML, CSS, JavaScript, фреймворки, React, Vue, Angular, веб-дизайн, SEO, обучение">
     <meta name="author" content="Frontend">
